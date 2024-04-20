@@ -3,7 +3,7 @@ package util;
 public abstract class Algoritmos {
 	
 	/**
-	 * Este metodo recibe un numero entero y devuelve el numero de fibonacci de dicho numero.
+	 * Este metodo recibe un numero entero y devuelve el numero de fibonacci de dicho numero
 	 * @param numero
 	 * @return
 	 */
@@ -18,7 +18,7 @@ public abstract class Algoritmos {
 		}
 	}
 	/**
-	 * Este metodo Recibe un numero entero y devuelve el factorial de dicho numero.
+	 * Este metodo Recibe un numero entero y devuelve el factorial de dicho numero
 	 * @param numero
 	 * @return
 	 */
