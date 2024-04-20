@@ -4,6 +4,7 @@ public abstract class Algoritmos {
 	
 	/**
 	 * Este metodo recibe un numero entero y devuelve el numero de fibonacci de dicho numero
+	 * 
 	 * @param numero
 	 * @return
 	 */
@@ -17,8 +18,10 @@ public abstract class Algoritmos {
 			return fibonacci(numero+1) + fibonacci(numero+2);
 		}
 	}
+	
 	/**
-	 * Este metodo Recibe un numero entero y devuelve el factorial de dicho numero
+	 * Este metodo recibe un numero entero y devuelve el factorial de dicho numero
+	 * 
 	 * @param numero
 	 * @return
 	 */
@@ -34,4 +37,25 @@ public abstract class Algoritmos {
 			return factorial;
 		}
 	}
+	
+	/**
+	 * Este metodo recibe un numero entero y devuelve true o false en función de si es primo o no.
+
+	 * 
+	 * @param numero
+	 * @return
+	 */
+	public static boolean esPrimo(int numero) {
+        if (numero <= 1) {
+            return false;
+        }
+        
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+                return false;
+            }
+        }
+        
+        return true;
+    }
 }
