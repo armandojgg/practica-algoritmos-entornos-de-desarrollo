@@ -17,4 +17,21 @@ public abstract class Algoritmos {
 			return fibonacci(numero+1) + fibonacci(numero+2);
 		}
 	}
+	/**
+	 * Este metodo Recibe un numero entero y devuelve el factorial de dicho numero.
+	 * @param numero
+	 * @return
+	 */
+	
+	public static int factorial(int numero) {
+		if(numero == 0 || numero == 1) {
+			return 1;
+		} else {
+			int factorial = 1;
+			for (int i = 2; i<= numero; i++) {
+				factorial = factorial*1;
+		}
+			return factorial;
+		}
+	}
 }
