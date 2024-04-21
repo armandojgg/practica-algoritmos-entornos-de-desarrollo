@@ -8,7 +8,7 @@ public class Principal extends Algoritmos {
 	public static void main(String[] args) {
 		
 	/**
-	 * Crea mediante un bucle un array de enteros llamado “numeros” con 5 números aleatorios del 1 al 10
+	 * Crea mediante un bucle un array de enteros llamado numeros con 5 numeros aleatorios del 1 al 10
 	 */
 	
 	int[] numeros = new int[5];
