@@ -3,7 +3,7 @@ package app;
 import java.util.Random;
 import util.Algoritmos;
 
-public class Principal {
+public class Principal extends Algoritmos {
 	
 	public static void main(String[] args) {
 		
@@ -27,5 +27,52 @@ public class Principal {
         numeros[i] = random.nextInt(10) + 1;
     	}
 	
+	/**
+	 * Creamos un nuevo array que almacenara los resultados de Fibonacci.
+	 * 
+	 */
+	
+	int[] resultadoFibonacci = new int[numeros.length];
+	
+	/**
+	 * Creamos un bucle for para calcular Fibonacci de cada número en el array numeros.
+	 * 
+	 */
+	
+	for (int i = 0; i < numeros.length; i++) {
+        resultadoFibonacci[i] = fibonacci(numeros[i]);
+    	}
+	
+	/**
+	 * Creamos un nuevo array que almacenara resultados factorial.
+	 * 
+	 */
+	
+	int[] resultadoFactorial = new int[numeros.length];
+	
+	/**
+	 * Bucle for, que lo que hara, sera calcular el factorial de cada numero en el array numeros.
+	 * 
+	 */
+	for (int i = 0; i < numeros.length; i++) {
+        resultadoFactorial[i] = factorial(numeros[i]);
+    	}
+	
+	/**
+	 * Creamos un nuevo array que inicializara resultados primos.
+	 * 
+	 */
+	
+		boolean[] resultadoPrimos = new boolean[numeros.length];
+		
+	/**
+	 * Bucle for que comprueba si cada numero en el array es primo o no lo es.
+	 * 	
+	 */
+		
+		for (int i = 0; i < numeros.length; i++) {
+            resultadoPrimos[i] = esPrimo(numeros[i]);
+        }
+		
 	}	
 }

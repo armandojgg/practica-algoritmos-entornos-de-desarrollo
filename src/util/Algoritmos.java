@@ -15,7 +15,7 @@ public abstract class Algoritmos {
 		} else if (numero == 1) {
 			return 1;
 		} else {
-			return fibonacci(numero+1) + fibonacci(numero+2);
+			return fibonacci(numero-1) + fibonacci(numero-2);
 		}
 	}
 	
@@ -45,6 +45,7 @@ public abstract class Algoritmos {
 	 * @param numero
 	 * @return
 	 */
+	
 	public static boolean esPrimo(int numero) {
         if (numero <= 1) {
             return false;
